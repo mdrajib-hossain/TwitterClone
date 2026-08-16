@@ -4,7 +4,6 @@ namespace TwitterClone.Domain.Entities
 {
     public class BaseEntity
     {
-
         public Guid Id { get; private set; }
         public DateTime CreatedAt { get; private set; }
         public DateTime? ModifiedAt { get; private set; }
@@ -21,7 +20,5 @@ namespace TwitterClone.Domain.Entities
         {
             return $"BaseEntity: Id: {Id}, CreatedAt: {CreatedAt}, ModifiedAt: {ModifiedAt}, CreatedBy: {CreatedBy}, ModifiedBy: {ModifiedBy}";
         }
-
-
     }
-}
+    }
