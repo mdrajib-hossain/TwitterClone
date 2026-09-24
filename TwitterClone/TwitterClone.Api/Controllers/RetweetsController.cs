@@ -9,9 +9,7 @@ namespace TwitterClone.Api.Controllers
     [Authorize]
     public class RetweetsController : Controller
     {
-        public IActionResult Index()
-        {
-            return View();
-        }
+       
+
     }
 }

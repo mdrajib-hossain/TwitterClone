@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using TwitterClone.Domain.Entities;
 
 namespace TwitterClone.Api.Controllers
 {
@@ -8,9 +9,12 @@ namespace TwitterClone.Api.Controllers
     [Authorize]
     public class LikesController : Controller
     {
-        public IActionResult Index()
-        {
-            return View();
-        }
-    }
+
+
+        
+
+
+
+
+}
 }

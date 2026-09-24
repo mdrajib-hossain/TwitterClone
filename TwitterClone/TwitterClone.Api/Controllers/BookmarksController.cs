@@ -8,9 +8,15 @@ namespace TwitterClone.Api.Controllers
     [Authorize]
     public class BookmarksController : Controller
     {
+
+
+
+        [HttpGet] // <-- Add this attribute
         public IActionResult Index()
         {
-            return View();
+            return Ok("Bookmarks endpoint working");
         }
+
+
     }
 }

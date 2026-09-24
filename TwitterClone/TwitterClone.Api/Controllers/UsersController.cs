@@ -8,9 +8,6 @@ namespace TwitterClone.Api.Controllers
     [Authorize]
     public class UsersController : Controller
     {
-        public IActionResult Index()
-        {
-            return View();
-        }
+       
     }
 }

@@ -9,9 +9,6 @@ namespace TwitterClone.Api.Controllers
     [Authorize]
     public class MessagesController : Controller
     {
-        public IActionResult Index()
-        {
-            return View();
-        }
+        
     }
 }
