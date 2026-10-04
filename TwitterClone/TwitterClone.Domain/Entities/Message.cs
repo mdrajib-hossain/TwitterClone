@@ -1,6 +1,4 @@
-﻿
-
-namespace TwitterClone.Domain.Entities
+﻿namespace TwitterClone.Domain.Entities
 {
     public class Message : BaseEntity
     {

@@ -1,9 +1,5 @@
-﻿
-
-namespace TwitterClone.Domain.Entities
+﻿namespace TwitterClone.Domain.Entities
 {
-
-
     public abstract class Notification : BaseEntity
     {
         private Guid _userId;
