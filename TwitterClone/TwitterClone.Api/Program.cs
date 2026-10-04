@@ -1,3 +1,8 @@
+using TwitterClone.Application;
+using TwitterClone.Application.Interfaces;
+using TwitterClone.Application.Services;
+using TwitterClone.Infrastructure;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -6,6 +11,12 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+
+builder.Services.AddScoped<IUserService, UserService>();
+// Clean architecture layers: each layer registers its own services.
+builder.Services.AddApplication();
+builder.Services.AddInfrastructure();
 
 
 
