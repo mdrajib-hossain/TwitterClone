@@ -1,6 +1,4 @@
 using TwitterClone.Application;
-using TwitterClone.Application.Interfaces;
-using TwitterClone.Application.Services;
 using TwitterClone.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -12,8 +10,6 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-
-builder.Services.AddScoped<IUserService, UserService>();
 // Clean architecture layers: each layer registers its own services.
 builder.Services.AddApplication();
 builder.Services.AddInfrastructure();
