@@ -1,12 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using TwitterClone.Api.Dtos;
+using TwitterClone.Application.Dtos;
 
 namespace TwitterClone.Application.Interfaces
 {
-    internal interface IBookmarkService
+    public interface IBookmarkService
     {
+        BookmarkDto? CreateBookmark(CreateBookmarkDto createBookmarkDto);
+        BookmarkDto? GetBookmarkById(Guid id);
+        List<BookmarkDto> GetBookmarks(Guid? userId);
+        bool DeleteBookmark(Guid id);
     }
 }
