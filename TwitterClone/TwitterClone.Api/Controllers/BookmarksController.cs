@@ -13,8 +13,7 @@ namespace TwitterClone.Api.Controllers
 
         private readonly IBookmarkService _bookmarkService;
 
-        public BookmarksController(
-            IBookmarkService bookmarkService)
+        public BookmarksController(IBookmarkService bookmarkService)
         {
             _bookmarkService = bookmarkService;
         }
