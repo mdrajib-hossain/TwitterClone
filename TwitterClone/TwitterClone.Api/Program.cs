@@ -16,8 +16,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IUserService, UserService>();
 // Clean architecture layers: each layer registers its own services.
 builder.Services.AddApplication();
-builder.Services.AddInfrastructure();
-
+builder.Services.AddInfrastructure(builder.Configuration);
 
 
 var app = builder.Build();
