@@ -23,9 +23,8 @@ namespace TwitterClone.Application.Services
         public AuthResponseDto? Login(LoginDto loginDto)
         {
             var user = _userRepository.GetUserByEmail(loginDto.Email);
-
-            var userAuthorized = _passwordHasher.VerifyPassword(loginDto.Password, user.PasswordHash);
-
+                        
+            var userAuthorized = _passwordHasher.VerifyPassword(user.ToDto(), loginDto.Password, user.PasswordHash);
             if (userAuthorized)
             {
                 var (token, expiryTime) = _tokenService.GetToken(user.ToDto());
