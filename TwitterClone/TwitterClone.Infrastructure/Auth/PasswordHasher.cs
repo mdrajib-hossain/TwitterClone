@@ -22,7 +22,7 @@ namespace TwitterClone.Infrastructure.Auth
         {
             var result = _passwordHasher.VerifyHashedPassword(user, passwordHash, password);
 
-            if (result == PasswordVerificationResult.Success)
+            if(result == PasswordVerificationResult.Success)
             {
                 return true;
             }

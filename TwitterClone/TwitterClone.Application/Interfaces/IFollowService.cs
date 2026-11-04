@@ -1,4 +1,4 @@
-﻿using TwitterClone.Application.Dtos;
+using TwitterClone.Application.Dtos;
 
 namespace TwitterClone.Application.Interfaces
 {

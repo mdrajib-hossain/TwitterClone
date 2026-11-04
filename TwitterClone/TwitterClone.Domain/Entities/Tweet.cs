@@ -12,7 +12,7 @@ namespace TwitterClone.Domain.Entities
         private string _content;
 
         public static int MaxContentLength = 200;
-
+        
 
         public Tweet(string content) : base(Guid.NewGuid())
         {
@@ -30,6 +30,8 @@ namespace TwitterClone.Domain.Entities
             get { return _userId; }
             set { _userId = value; }
         }
+
+        public User User { get; set; }
 
         public string Content
         {
@@ -56,7 +58,7 @@ namespace TwitterClone.Domain.Entities
 
         public bool CanBeLiked()
         {
-            if (string.IsNullOrWhiteSpace(Content))
+            if(string.IsNullOrWhiteSpace(Content))
             {
                 return false;
             }

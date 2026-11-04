@@ -1,4 +1,4 @@
-﻿using TwitterClone.Application.Interfaces;
+using TwitterClone.Application.Interfaces;
 using TwitterClone.Domain.Entities;
 
 namespace TwitterClone.Infrastructure.Repositories

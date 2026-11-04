@@ -1,4 +1,4 @@
-﻿using TwitterClone.Domain.Entities;
+using TwitterClone.Domain.Entities;
 
 namespace TwitterClone.Application.Interfaces
 {
