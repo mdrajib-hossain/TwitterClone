@@ -12,7 +12,7 @@ using TwitterClone.Infrastructure.Persistence;
 namespace TwitterClone.Infrastructure.Persistence.Migrations
 {
     [DbContext(typeof(TwitterCloneDbContext))]
-    [Migration("20261104182141_InitialCreate")]
+    [Migration("20261104192327_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
