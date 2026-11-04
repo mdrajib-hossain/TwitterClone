@@ -23,7 +23,7 @@ namespace TwitterClone.Infrastructure
             }
 
             // we need to fix it..
-            services.AddDbContext<TwitterCloneDbContext>(options =>
+            services.AddDbContext<TwitterCloneDbContext>(options => 
                 options.UseNpgsql(connectionString));
 
             services.AddScoped<IUserRepository, UserRepository>();

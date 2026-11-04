@@ -1,6 +1,5 @@
-﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using TwitterClone.Api.Dtos;
 using TwitterClone.Application.Dtos;
 using TwitterClone.Application.Interfaces;
 

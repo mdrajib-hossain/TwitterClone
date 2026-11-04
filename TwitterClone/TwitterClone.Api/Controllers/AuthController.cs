@@ -28,7 +28,7 @@ namespace TwitterClone.Api.Controllers
         {
             var authResponse = _authService.Login(loginDto);
 
-            if (authResponse is null)
+            if(authResponse is null)
             {
                 return Unauthorized();
             }

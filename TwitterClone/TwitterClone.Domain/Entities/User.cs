@@ -42,7 +42,7 @@
         public string PasswordHash
         {
             get { return _passwordHash; }
-            set { _passwordHash = value; }
+            set { _passwordHash = value;  }
         }
 
         private List<Guid> _followers = new List<Guid>();
@@ -56,7 +56,7 @@
 
         public void Follow(Guid userId)
         {
-            if (!_followers.Contains(userId))
+            if(!_followers.Contains(userId))
             {
                 _followers.Add(userId);
             }
@@ -64,7 +64,7 @@
 
         public void Unfollow(Guid userId)
         {
-            if (_followers.Contains(userId))
+            if(_followers.Contains(userId))
             {
                 _followers.Remove(userId);
             }
@@ -72,7 +72,7 @@
 
         public void AddNotification(Guid notificationId)
         {
-            if (!_inComingNotifications.Contains(notificationId))
+            if(!_inComingNotifications.Contains(notificationId))
             {
                 _inComingNotifications.Add(notificationId);
             }

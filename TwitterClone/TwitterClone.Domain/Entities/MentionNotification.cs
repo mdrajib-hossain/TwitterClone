@@ -14,7 +14,7 @@ namespace TwitterClone.Domain.Entities
         }
         public Guid MentionedByUserId { get; set; }
 
-
+        
         public override string DescribeRecord()
         {
             var baseRecord = base.DescribeRecord();

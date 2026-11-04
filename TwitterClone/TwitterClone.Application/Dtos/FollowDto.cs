@@ -1,4 +1,4 @@
-﻿namespace TwitterClone.Application.Dtos
+namespace TwitterClone.Application.Dtos
 {
     public class FollowDto
     {
