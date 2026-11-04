@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 
 namespace TwitterClone.Api.Controllers
 {
@@ -6,6 +7,7 @@ namespace TwitterClone.Api.Controllers
     // api/retweets
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class RetweetsController : ControllerBase
     {
 
